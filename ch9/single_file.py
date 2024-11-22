@@ -32,3 +32,6 @@ def test_main(capsys):
     main()
     captured = capsys.readouterr()
     assert captured.out == "foo baz\n"
+
+def test_bar():
+    assert bar() == "bar"
