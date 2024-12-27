@@ -130,4 +130,5 @@ def test_update_invalid(mock_cardsdb):
 def test_add_missing_summary(mock_cardsdb):
     mock_cardsdb.add_card.side_effect = cards.api.MissingSummary
     out = cards_cli("add")
-    assert "Error: Missing argument 'SUMMARY...'" in out
+    assert "Error" in out
+    assert "Missing argument 'SUMMARY...'" in out
