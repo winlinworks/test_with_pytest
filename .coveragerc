@@ -1,0 +1,4 @@
+[paths]
+source = 
+   ch11/cards_proj/src
+   .tox/*/site-packages
